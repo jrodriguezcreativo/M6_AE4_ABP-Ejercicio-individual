@@ -1,0 +1,17 @@
+{
+  "name": "m6_ae4_abp-ejercicio-individual",
+  "version": "1.0.0",
+  "description": "Pequeño portafolio personal servido con Express y plantillas Handlebars (hbs).  \r Incluye página principal con nombre y lista de 3 proyectos, página About, página Projects con detalles, parciales header/footer y helper que muestra el año actual.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "hbs": "^4.2.0"
+  }
+}
