@@ -1,0 +1,151 @@
+/* ==========  ESTILOS GENERALES  ========== */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+section {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+/* ==========  HEADER  ========== */
+
+header {
+  background: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3478f6;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #2766d8;
+}
+
+
+/* ==========  HOME & ABOUT  ========== */
+
+.home,
+.about {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Imagen principal (foto o ilustración) */
+.foto-perfil {
+  max-width: 320px;
+  border-radius: 50%;
+  display: block;
+}
+
+
+/* ==========  PROYECTOS (Home + Projects)  ========== */
+
+.proyecto {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+/* Imagen de los proyectos */
+.proyecto img {
+  max-width: 320px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+
+/* ==========  BOTONES (unificados)  ========== */
+
+.btn,
+.boton-proyecto {
+  display: inline-block;
+  background: #133656;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.btn:hover,
+.boton-proyecto:hover {
+  background: #0C71B2;
+}
+
+/* contenedor para botones en Projects */
+.proyecto-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+
+/* ==========  FOOTER  ========== */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #ffffff;
+  margin-top: 30px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ==========  ERROR 404  ========== */
+
+.not-found {
+  text-align: center;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.not-found a {
+  color: #3478f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.not-found a:hover {
+  color: #2766d8;
+}

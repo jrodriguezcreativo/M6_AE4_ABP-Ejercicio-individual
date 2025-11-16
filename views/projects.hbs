@@ -1,0 +1,45 @@
+{{> header}}
+
+<section class="projects">
+  <h1>Proyectos</h1>
+
+  {{#each proyectos}}
+    <article class="proyecto">
+
+      {{#if this.img}}
+        <img src="{{this.img}}">
+      {{/if}}
+
+      <div>
+        <h2>{{nombre}}</h2>
+        <p>{{descripcion}}</p>
+
+        <h3>Detalles</h3>
+        <p>{{detalles}}</p>
+
+        <h3>Tecnologías:</h3>
+        <ul>
+          {{#each tech}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+
+        <p><strong>Año:</strong> {{año}}</p>
+
+        <div class="proyecto-links">
+          {{#if this.repo}}
+            <a href="{{this.repo}}" target="_blank" class="btn">Repositorio</a>
+          {{/if}}
+
+          {{#if this.web}}
+            <a href="{{this.web}}" target="_blank" class="btn">Ver sitio</a>
+          {{/if}}
+        </div>
+
+      </div>
+
+    </article>
+  {{/each}}
+</section>
+
+{{> footer}}
